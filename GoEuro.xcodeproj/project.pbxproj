@@ -1,0 +1,945 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		649136970228E465627BA12B /* libPods-GoEuroTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFB9FF46178C599F44533AC /* libPods-GoEuroTests.a */; };
+		AB069BF6E10BCCA99F61A34D /* libPods-GoEuro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301B745EFCFAA91ED4674CB5 /* libPods-GoEuro.a */; };
+		C8DEDA311E1B8D47005E417F /* GoEuroTransportViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DEDA301E1B8D47005E417F /* GoEuroTransportViewModelTests.m */; };
+		C8DEDA341E1B8DF5005E417F /* MockNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DEDA331E1B8DF5005E417F /* MockNetworking.m */; };
+		C8DEDA361E1BA1F1005E417F /* testEmptyData.json in Resources */ = {isa = PBXBuildFile; fileRef = C8DEDA351E1BA1F1005E417F /* testEmptyData.json */; };
+		FA08D9B61E04828000A22BA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA08D9B51E04828000A22BA0 /* main.m */; };
+		FA08D9B91E04828000A22BA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA08D9B81E04828000A22BA0 /* AppDelegate.m */; };
+		FA08D9C21E04828000A22BA0 /* GoEuro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA08D9C01E04828000A22BA0 /* GoEuro.xcdatamodeld */; };
+		FA08D9C41E04828000A22BA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA08D9C31E04828000A22BA0 /* Assets.xcassets */; };
+		FA08D9C71E04828000A22BA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA08D9C51E04828000A22BA0 /* LaunchScreen.storyboard */; };
+		FA08D9D21E04828000A22BA0 /* GoEuroTransportDaoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA08D9D11E04828000A22BA0 /* GoEuroTransportDaoTests.m */; };
+		FA08D9DD1E04850200A22BA0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA08D9DC1E04850200A22BA0 /* MainStoryboard.storyboard */; };
+		FA08D9E01E0499DF00A22BA0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA08D9DF1E0499DF00A22BA0 /* MainViewController.m */; };
+		FA08D9EB1E049FD800A22BA0 /* UIViewController+StoryboardLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = FA08D9EA1E049FD800A22BA0 /* UIViewController+StoryboardLoad.m */; };
+		FA08D9EE1E04A11C00A22BA0 /* AppMainRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA08D9ED1E04A11C00A22BA0 /* AppMainRouter.m */; };
+		FA0B74141E16858D0024F10B /* TransportsTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0B74131E16858D0024F10B /* TransportsTabBar.xib */; };
+		FA0B74191E16869F0024F10B /* TransportsTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B74181E16869F0024F10B /* TransportsTabBar.m */; };
+		FA17937C1E059EA800ED9A1D /* AppearanceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17937B1E059EA800ED9A1D /* AppearanceManager.m */; };
+		FA17937F1E05B36700ED9A1D /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17937E1E05B36700ED9A1D /* UIImage+Color.m */; };
+		FA1793831E05F8EF00ED9A1D /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1793821E05F8EF00ED9A1D /* CoreDataManager.m */; };
+		FA1793861E0693E700ED9A1D /* NSManagedObjectContext+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1793851E0693E700ED9A1D /* NSManagedObjectContext+Helpers.m */; };
+		FA17938D1E06BAC400ED9A1D /* GoEuroApi.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17938C1E06BAC400ED9A1D /* GoEuroApi.m */; };
+		FA1793901E06C09900ED9A1D /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17938F1E06C09900ED9A1D /* SettingsManager.m */; };
+		FA1793A11E070A3100ED9A1D /* NSEntityDescription+EntityManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1793A01E070A3100ED9A1D /* NSEntityDescription+EntityManagement.m */; };
+		FA2FE1191E171C5700693A30 /* TransportTabBarControllerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2FE1181E171C5700693A30 /* TransportTabBarControllerAnimator.m */; };
+		FA2FE11F1E191EE900693A30 /* MainRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2FE11E1E191EE900693A30 /* MainRouter.m */; };
+		FA2FE1221E19795500693A30 /* UITableView+CellAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2FE1211E19795500693A30 /* UITableView+CellAnimation.m */; };
+		FA42B7291E15C99A00B19BCD /* TransportTableCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA42B7281E15C99A00B19BCD /* TransportTableCellViewModel.m */; };
+		FA4F19731E19848B00E7ADF5 /* TransportRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4F19721E19848B00E7ADF5 /* TransportRouter.swift */; };
+		FA4F19761E19B5BC00E7ADF5 /* GoEuroTestHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4F19751E19B5BC00E7ADF5 /* GoEuroTestHelpers.m */; };
+		FA4F19781E19B62C00E7ADF5 /* testBusData.json in Resources */ = {isa = PBXBuildFile; fileRef = FA4F19771E19B62C00E7ADF5 /* testBusData.json */; };
+		FA5733CA1E09BD3F003C70E4 /* TransportDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5733C91E09BD3F003C70E4 /* TransportDAO.m */; };
+		FA5733D11E09D533003C70E4 /* ProviderLogoDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5733D01E09D533003C70E4 /* ProviderLogoDAO.m */; };
+		FA5733D41E09D5FA003C70E4 /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5733D31E09D5FA003C70E4 /* BaseDAO.m */; };
+		FAA37D091E1326E6008045DD /* LoadingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA37D081E1326E6008045DD /* LoadingBar.swift */; };
+		FAD0AAD81E07331E002412FD /* Train+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0AACD1E07331E002412FD /* Train+CoreDataClass.m */; };
+		FAD0AAD91E07331E002412FD /* Train+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0AACF1E07331E002412FD /* Train+CoreDataProperties.m */; };
+		FAD0AADA1E07331E002412FD /* Flight+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0AAD11E07331E002412FD /* Flight+CoreDataClass.m */; };
+		FAD0AADB1E07331E002412FD /* Flight+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0AAD31E07331E002412FD /* Flight+CoreDataProperties.m */; };
+		FAD0AADC1E07331E002412FD /* Bus+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0AAD51E07331E002412FD /* Bus+CoreDataClass.m */; };
+		FAD0AADD1E07331E002412FD /* Bus+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0AAD71E07331E002412FD /* Bus+CoreDataProperties.m */; };
+		FAEC79071E0B1FC600329F50 /* CoreDataScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEC79061E0B1FC600329F50 /* CoreDataScheduler.m */; };
+		FAF07D481E073E1000698F2D /* Transport+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF07D451E073E1000698F2D /* Transport+CoreDataClass.m */; };
+		FAF07D491E073E1000698F2D /* Transport+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF07D471E073E1000698F2D /* Transport+CoreDataProperties.m */; };
+		FAF07D521E0747A300698F2D /* Transport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF07D511E0747A300698F2D /* Transport.storyboard */; };
+		FAF07D551E0747BB00698F2D /* TransportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF07D541E0747BB00698F2D /* TransportViewController.m */; };
+		FAF07D591E07493300698F2D /* TransportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF07D581E07493300698F2D /* TransportTableViewCell.m */; };
+		FAF07D5C1E0749F000698F2D /* TransportViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF07D5B1E0749F000698F2D /* TransportViewModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA08D9CE1E04828000A22BA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA08D9A91E04827F00A22BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA08D9B01E04827F00A22BA0;
+			remoteInfo = GoEuro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24D4BA8A6959C89776A9BA7B /* Pods-GoEuroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuroTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuroTests/Pods-GoEuroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		301B745EFCFAA91ED4674CB5 /* libPods-GoEuro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoEuro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36ADDB4F36F291963E4FEA45 /* Pods-GoEuro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuro/Pods-GoEuro.debug.xcconfig"; sourceTree = "<group>"; };
+		5F13D981240956DB9772B038 /* Pods-GoEuroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuroTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuroTests/Pods-GoEuroTests.release.xcconfig"; sourceTree = "<group>"; };
+		7BFB9FF46178C599F44533AC /* libPods-GoEuroTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoEuroTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC29F2C6A5295C64BCFDD94 /* Pods-GoEuro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuro.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuro/Pods-GoEuro.release.xcconfig"; sourceTree = "<group>"; };
+		C8DEDA301E1B8D47005E417F /* GoEuroTransportViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoEuroTransportViewModelTests.m; sourceTree = "<group>"; };
+		C8DEDA321E1B8DF5005E417F /* MockNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockNetworking.h; sourceTree = "<group>"; };
+		C8DEDA331E1B8DF5005E417F /* MockNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockNetworking.m; sourceTree = "<group>"; };
+		C8DEDA351E1BA1F1005E417F /* testEmptyData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testEmptyData.json; sourceTree = "<group>"; };
+		FA08D9B11E04828000A22BA0 /* GoEuro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEuro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA08D9B51E04828000A22BA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA08D9B71E04828000A22BA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA08D9B81E04828000A22BA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA08D9C11E04828000A22BA0 /* GoEuro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoEuro.xcdatamodel; sourceTree = "<group>"; };
+		FA08D9C31E04828000A22BA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA08D9C61E04828000A22BA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA08D9C81E04828000A22BA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA08D9CD1E04828000A22BA0 /* GoEuroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoEuroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA08D9D11E04828000A22BA0 /* GoEuroTransportDaoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoEuroTransportDaoTests.m; sourceTree = "<group>"; };
+		FA08D9D31E04828000A22BA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA08D9DC1E04850200A22BA0 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FA08D9DE1E0499DF00A22BA0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FA08D9DF1E0499DF00A22BA0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FA08D9E91E049FD800A22BA0 /* UIViewController+StoryboardLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StoryboardLoad.h"; sourceTree = "<group>"; };
+		FA08D9EA1E049FD800A22BA0 /* UIViewController+StoryboardLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StoryboardLoad.m"; sourceTree = "<group>"; };
+		FA08D9EC1E04A11C00A22BA0 /* AppMainRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMainRouter.h; sourceTree = "<group>"; };
+		FA08D9ED1E04A11C00A22BA0 /* AppMainRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppMainRouter.m; sourceTree = "<group>"; };
+		FA0B74131E16858D0024F10B /* TransportsTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransportsTabBar.xib; sourceTree = "<group>"; };
+		FA0B74171E16869F0024F10B /* TransportsTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportsTabBar.h; sourceTree = "<group>"; };
+		FA0B74181E16869F0024F10B /* TransportsTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportsTabBar.m; sourceTree = "<group>"; };
+		FA17937A1E059EA800ED9A1D /* AppearanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearanceManager.h; sourceTree = "<group>"; };
+		FA17937B1E059EA800ED9A1D /* AppearanceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearanceManager.m; sourceTree = "<group>"; };
+		FA17937D1E05B36700ED9A1D /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		FA17937E1E05B36700ED9A1D /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		FA1793811E05F8EF00ED9A1D /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		FA1793821E05F8EF00ED9A1D /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		FA1793841E0693E700ED9A1D /* NSManagedObjectContext+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Helpers.h"; sourceTree = "<group>"; };
+		FA1793851E0693E700ED9A1D /* NSManagedObjectContext+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Helpers.m"; sourceTree = "<group>"; };
+		FA17938B1E06BAC400ED9A1D /* GoEuroApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoEuroApi.h; sourceTree = "<group>"; };
+		FA17938C1E06BAC400ED9A1D /* GoEuroApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoEuroApi.m; sourceTree = "<group>"; };
+		FA17938E1E06C09900ED9A1D /* SettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsManager.h; sourceTree = "<group>"; };
+		FA17938F1E06C09900ED9A1D /* SettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsManager.m; sourceTree = "<group>"; };
+		FA1793911E06E92500ED9A1D /* JSONSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONSerializable.h; sourceTree = "<group>"; };
+		FA17939F1E070A3100ED9A1D /* NSEntityDescription+EntityManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEntityDescription+EntityManagement.h"; sourceTree = "<group>"; };
+		FA1793A01E070A3100ED9A1D /* NSEntityDescription+EntityManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEntityDescription+EntityManagement.m"; sourceTree = "<group>"; };
+		FA1B8E781E126EBE007B7EA2 /* TransportType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransportType.h; sourceTree = "<group>"; };
+		FA2FE1171E171C5700693A30 /* TransportTabBarControllerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportTabBarControllerAnimator.h; sourceTree = "<group>"; };
+		FA2FE1181E171C5700693A30 /* TransportTabBarControllerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportTabBarControllerAnimator.m; sourceTree = "<group>"; };
+		FA2FE11D1E191EE900693A30 /* MainRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRouter.h; sourceTree = "<group>"; };
+		FA2FE11E1E191EE900693A30 /* MainRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainRouter.m; sourceTree = "<group>"; };
+		FA2FE1201E19795500693A30 /* UITableView+CellAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CellAnimation.h"; sourceTree = "<group>"; };
+		FA2FE1211E19795500693A30 /* UITableView+CellAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CellAnimation.m"; sourceTree = "<group>"; };
+		FA42B7271E15C99A00B19BCD /* TransportTableCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportTableCellViewModel.h; sourceTree = "<group>"; };
+		FA42B7281E15C99A00B19BCD /* TransportTableCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportTableCellViewModel.m; sourceTree = "<group>"; };
+		FA4F19721E19848B00E7ADF5 /* TransportRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportRouter.swift; sourceTree = "<group>"; };
+		FA4F19741E19B5BC00E7ADF5 /* GoEuroTestHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoEuroTestHelpers.h; sourceTree = "<group>"; };
+		FA4F19751E19B5BC00E7ADF5 /* GoEuroTestHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoEuroTestHelpers.m; sourceTree = "<group>"; };
+		FA4F19771E19B62C00E7ADF5 /* testBusData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testBusData.json; sourceTree = "<group>"; };
+		FA5733C81E09BD3F003C70E4 /* TransportDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportDAO.h; sourceTree = "<group>"; };
+		FA5733C91E09BD3F003C70E4 /* TransportDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportDAO.m; sourceTree = "<group>"; };
+		FA5733CF1E09D533003C70E4 /* ProviderLogoDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProviderLogoDAO.h; sourceTree = "<group>"; };
+		FA5733D01E09D533003C70E4 /* ProviderLogoDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProviderLogoDAO.m; sourceTree = "<group>"; };
+		FA5733D21E09D5FA003C70E4 /* BaseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDAO.h; sourceTree = "<group>"; };
+		FA5733D31E09D5FA003C70E4 /* BaseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDAO.m; sourceTree = "<group>"; };
+		FAA37D081E1326E6008045DD /* LoadingBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingBar.swift; sourceTree = "<group>"; };
+		FAA37D0C1E146A24008045DD /* GoEuro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoEuro-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAD0AACC1E07331E002412FD /* Train+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Train+CoreDataClass.h"; sourceTree = "<group>"; };
+		FAD0AACD1E07331E002412FD /* Train+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Train+CoreDataClass.m"; sourceTree = "<group>"; };
+		FAD0AACE1E07331E002412FD /* Train+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Train+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FAD0AACF1E07331E002412FD /* Train+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Train+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FAD0AAD01E07331E002412FD /* Flight+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Flight+CoreDataClass.h"; sourceTree = "<group>"; };
+		FAD0AAD11E07331E002412FD /* Flight+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Flight+CoreDataClass.m"; sourceTree = "<group>"; };
+		FAD0AAD21E07331E002412FD /* Flight+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Flight+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FAD0AAD31E07331E002412FD /* Flight+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Flight+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FAD0AAD41E07331E002412FD /* Bus+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bus+CoreDataClass.h"; sourceTree = "<group>"; };
+		FAD0AAD51E07331E002412FD /* Bus+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bus+CoreDataClass.m"; sourceTree = "<group>"; };
+		FAD0AAD61E07331E002412FD /* Bus+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bus+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FAD0AAD71E07331E002412FD /* Bus+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bus+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FAEC79051E0B1FC600329F50 /* CoreDataScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataScheduler.h; sourceTree = "<group>"; };
+		FAEC79061E0B1FC600329F50 /* CoreDataScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataScheduler.m; sourceTree = "<group>"; };
+		FAF07D441E073E1000698F2D /* Transport+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Transport+CoreDataClass.h"; sourceTree = "<group>"; };
+		FAF07D451E073E1000698F2D /* Transport+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Transport+CoreDataClass.m"; sourceTree = "<group>"; };
+		FAF07D461E073E1000698F2D /* Transport+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Transport+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FAF07D471E073E1000698F2D /* Transport+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Transport+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FAF07D511E0747A300698F2D /* Transport.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transport.storyboard; sourceTree = "<group>"; };
+		FAF07D531E0747BB00698F2D /* TransportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportViewController.h; sourceTree = "<group>"; };
+		FAF07D541E0747BB00698F2D /* TransportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportViewController.m; sourceTree = "<group>"; };
+		FAF07D571E07493300698F2D /* TransportTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportTableViewCell.h; sourceTree = "<group>"; };
+		FAF07D581E07493300698F2D /* TransportTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportTableViewCell.m; sourceTree = "<group>"; };
+		FAF07D5A1E0749F000698F2D /* TransportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportViewModel.h; sourceTree = "<group>"; };
+		FAF07D5B1E0749F000698F2D /* TransportViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportViewModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA08D9AE1E04827F00A22BA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB069BF6E10BCCA99F61A34D /* libPods-GoEuro.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA08D9CA1E04828000A22BA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649136970228E465627BA12B /* libPods-GoEuroTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EB3D79442C7F948DC86643A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				301B745EFCFAA91ED4674CB5 /* libPods-GoEuro.a */,
+				7BFB9FF46178C599F44533AC /* libPods-GoEuroTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8DEDA391E1BB519005E417F /* TestResources */ = {
+			isa = PBXGroup;
+			children = (
+				FA4F19771E19B62C00E7ADF5 /* testBusData.json */,
+				C8DEDA351E1BA1F1005E417F /* testEmptyData.json */,
+			);
+			path = TestResources;
+			sourceTree = "<group>";
+		};
+		F537EB704418FB35D53A8EC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36ADDB4F36F291963E4FEA45 /* Pods-GoEuro.debug.xcconfig */,
+				ABC29F2C6A5295C64BCFDD94 /* Pods-GoEuro.release.xcconfig */,
+				24D4BA8A6959C89776A9BA7B /* Pods-GoEuroTests.debug.xcconfig */,
+				5F13D981240956DB9772B038 /* Pods-GoEuroTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA08D9A81E04827F00A22BA0 = {
+			isa = PBXGroup;
+			children = (
+				5EB3D79442C7F948DC86643A /* Frameworks */,
+				FA08D9B31E04828000A22BA0 /* GoEuro */,
+				FA08D9D01E04828000A22BA0 /* GoEuroTests */,
+				F537EB704418FB35D53A8EC6 /* Pods */,
+				FA08D9B21E04828000A22BA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA08D9B21E04828000A22BA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA08D9B11E04828000A22BA0 /* GoEuro.app */,
+				FA08D9CD1E04828000A22BA0 /* GoEuroTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA08D9B31E04828000A22BA0 /* GoEuro */ = {
+			isa = PBXGroup;
+			children = (
+				FA08D9F41E04A75F00A22BA0 /* Sources */,
+				FA08D9B41E04828000A22BA0 /* Supporting Files */,
+			);
+			path = GoEuro;
+			sourceTree = "<group>";
+		};
+		FA08D9B41E04828000A22BA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA08D9B71E04828000A22BA0 /* AppDelegate.h */,
+				FA08D9B81E04828000A22BA0 /* AppDelegate.m */,
+				FA08D9EC1E04A11C00A22BA0 /* AppMainRouter.h */,
+				FA08D9ED1E04A11C00A22BA0 /* AppMainRouter.m */,
+				FA08D9C31E04828000A22BA0 /* Assets.xcassets */,
+				FAA37D0C1E146A24008045DD /* GoEuro-Bridging-Header.h */,
+				FA08D9C01E04828000A22BA0 /* GoEuro.xcdatamodeld */,
+				FA08D9C81E04828000A22BA0 /* Info.plist */,
+				FA08D9C51E04828000A22BA0 /* LaunchScreen.storyboard */,
+				FA08D9B51E04828000A22BA0 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA08D9D01E04828000A22BA0 /* GoEuroTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8DEDA391E1BB519005E417F /* TestResources */,
+				FA4F19741E19B5BC00E7ADF5 /* GoEuroTestHelpers.h */,
+				FA4F19751E19B5BC00E7ADF5 /* GoEuroTestHelpers.m */,
+				FA08D9D11E04828000A22BA0 /* GoEuroTransportDaoTests.m */,
+				C8DEDA301E1B8D47005E417F /* GoEuroTransportViewModelTests.m */,
+				FA08D9D31E04828000A22BA0 /* Info.plist */,
+				C8DEDA321E1B8DF5005E417F /* MockNetworking.h */,
+				C8DEDA331E1B8DF5005E417F /* MockNetworking.m */,
+			);
+			path = GoEuroTests;
+			sourceTree = "<group>";
+		};
+		FA08D9EF1E04A6B400A22BA0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FA08D9F01E04A6BB00A22BA0 /* Main */,
+				FAF07D501E07478800698F2D /* Transport */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FA08D9F01E04A6BB00A22BA0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FA2FE11D1E191EE900693A30 /* MainRouter.h */,
+				FA2FE11E1E191EE900693A30 /* MainRouter.m */,
+				FA08D9DC1E04850200A22BA0 /* MainStoryboard.storyboard */,
+				FA08D9DE1E0499DF00A22BA0 /* MainViewController.h */,
+				FA08D9DF1E0499DF00A22BA0 /* MainViewController.m */,
+				FA0B74161E1686240024F10B /* TransportsTabBar */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FA08D9F11E04A6D100A22BA0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FA1793801E05F8D300ED9A1D /* CoreData */,
+				FA1793911E06E92500ED9A1D /* JSONSerializable.h */,
+				FA2FE1171E171C5700693A30 /* TransportTabBarControllerAnimator.h */,
+				FA2FE1181E171C5700693A30 /* TransportTabBarControllerAnimator.m */,
+				FAA37D061E1326D1008045DD /* Views */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FA08D9F21E04A6EC00A22BA0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA17939F1E070A3100ED9A1D /* NSEntityDescription+EntityManagement.h */,
+				FA1793A01E070A3100ED9A1D /* NSEntityDescription+EntityManagement.m */,
+				FA1793841E0693E700ED9A1D /* NSManagedObjectContext+Helpers.h */,
+				FA1793851E0693E700ED9A1D /* NSManagedObjectContext+Helpers.m */,
+				FA17937D1E05B36700ED9A1D /* UIImage+Color.h */,
+				FA17937E1E05B36700ED9A1D /* UIImage+Color.m */,
+				FA2FE1201E19795500693A30 /* UITableView+CellAnimation.h */,
+				FA2FE1211E19795500693A30 /* UITableView+CellAnimation.m */,
+				FA08D9E91E049FD800A22BA0 /* UIViewController+StoryboardLoad.h */,
+				FA08D9EA1E049FD800A22BA0 /* UIViewController+StoryboardLoad.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FA08D9F41E04A75F00A22BA0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FA08D9F21E04A6EC00A22BA0 /* Helpers */,
+				FA1793921E06F02100ED9A1D /* Models */,
+				FA08D9EF1E04A6B400A22BA0 /* Modules */,
+				FA17938A1E06B92F00ED9A1D /* Networking */,
+				FA08D9F11E04A6D100A22BA0 /* Other */,
+				FA1793761E059E3100ED9A1D /* Utils */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FA0B74161E1686240024F10B /* TransportsTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B74171E16869F0024F10B /* TransportsTabBar.h */,
+				FA0B74181E16869F0024F10B /* TransportsTabBar.m */,
+				FA0B74131E16858D0024F10B /* TransportsTabBar.xib */,
+			);
+			path = TransportsTabBar;
+			sourceTree = "<group>";
+		};
+		FA1793761E059E3100ED9A1D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA17937A1E059EA800ED9A1D /* AppearanceManager.h */,
+				FA17937B1E059EA800ED9A1D /* AppearanceManager.m */,
+				FA17938E1E06C09900ED9A1D /* SettingsManager.h */,
+				FA17938F1E06C09900ED9A1D /* SettingsManager.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FA1793801E05F8D300ED9A1D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FA1793811E05F8EF00ED9A1D /* CoreDataManager.h */,
+				FA1793821E05F8EF00ED9A1D /* CoreDataManager.m */,
+				FAEC79051E0B1FC600329F50 /* CoreDataScheduler.h */,
+				FAEC79061E0B1FC600329F50 /* CoreDataScheduler.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FA17938A1E06B92F00ED9A1D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FA5733CE1E09CFCB003C70E4 /* DAOs */,
+				FA17938B1E06BAC400ED9A1D /* GoEuroApi.h */,
+				FA17938C1E06BAC400ED9A1D /* GoEuroApi.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FA1793921E06F02100ED9A1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAD0AAD41E07331E002412FD /* Bus+CoreDataClass.h */,
+				FAD0AAD51E07331E002412FD /* Bus+CoreDataClass.m */,
+				FAD0AAD61E07331E002412FD /* Bus+CoreDataProperties.h */,
+				FAD0AAD71E07331E002412FD /* Bus+CoreDataProperties.m */,
+				FAD0AAD01E07331E002412FD /* Flight+CoreDataClass.h */,
+				FAD0AAD11E07331E002412FD /* Flight+CoreDataClass.m */,
+				FAD0AAD21E07331E002412FD /* Flight+CoreDataProperties.h */,
+				FAD0AAD31E07331E002412FD /* Flight+CoreDataProperties.m */,
+				FAD0AACC1E07331E002412FD /* Train+CoreDataClass.h */,
+				FAD0AACD1E07331E002412FD /* Train+CoreDataClass.m */,
+				FAD0AACE1E07331E002412FD /* Train+CoreDataProperties.h */,
+				FAD0AACF1E07331E002412FD /* Train+CoreDataProperties.m */,
+				FAF07D441E073E1000698F2D /* Transport+CoreDataClass.h */,
+				FAF07D451E073E1000698F2D /* Transport+CoreDataClass.m */,
+				FAF07D461E073E1000698F2D /* Transport+CoreDataProperties.h */,
+				FAF07D471E073E1000698F2D /* Transport+CoreDataProperties.m */,
+				FA1B8E781E126EBE007B7EA2 /* TransportType.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA5733CE1E09CFCB003C70E4 /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+				FA5733D21E09D5FA003C70E4 /* BaseDAO.h */,
+				FA5733D31E09D5FA003C70E4 /* BaseDAO.m */,
+				FA5733CF1E09D533003C70E4 /* ProviderLogoDAO.h */,
+				FA5733D01E09D533003C70E4 /* ProviderLogoDAO.m */,
+				FA5733C81E09BD3F003C70E4 /* TransportDAO.h */,
+				FA5733C91E09BD3F003C70E4 /* TransportDAO.m */,
+			);
+			path = DAOs;
+			sourceTree = "<group>";
+		};
+		FAA37D061E1326D1008045DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAA37D081E1326E6008045DD /* LoadingBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAF07D501E07478800698F2D /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				FAF07D561E07491C00698F2D /* Cell */,
+				FAF07D511E0747A300698F2D /* Transport.storyboard */,
+				FA4F19721E19848B00E7ADF5 /* TransportRouter.swift */,
+				FAF07D531E0747BB00698F2D /* TransportViewController.h */,
+				FAF07D541E0747BB00698F2D /* TransportViewController.m */,
+				FAF07D5A1E0749F000698F2D /* TransportViewModel.h */,
+				FAF07D5B1E0749F000698F2D /* TransportViewModel.m */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		FAF07D561E07491C00698F2D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA42B7271E15C99A00B19BCD /* TransportTableCellViewModel.h */,
+				FA42B7281E15C99A00B19BCD /* TransportTableCellViewModel.m */,
+				FAF07D571E07493300698F2D /* TransportTableViewCell.h */,
+				FAF07D581E07493300698F2D /* TransportTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA08D9B01E04827F00A22BA0 /* GoEuro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA08D9D61E04828000A22BA0 /* Build configuration list for PBXNativeTarget "GoEuro" */;
+			buildPhases = (
+				C779BC099C9A5678F96F47DD /* [CP] Check Pods Manifest.lock */,
+				FA08D9AD1E04827F00A22BA0 /* Sources */,
+				FA08D9AE1E04827F00A22BA0 /* Frameworks */,
+				FA08D9AF1E04827F00A22BA0 /* Resources */,
+				7F16167AB042824D2B6B8FBC /* [CP] Embed Pods Frameworks */,
+				06D17A5EF70300DC65EA5D03 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoEuro;
+			productName = GoEuro;
+			productReference = FA08D9B11E04828000A22BA0 /* GoEuro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA08D9CC1E04828000A22BA0 /* GoEuroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA08D9D91E04828000A22BA0 /* Build configuration list for PBXNativeTarget "GoEuroTests" */;
+			buildPhases = (
+				96B4BE6742A4290000767AEA /* [CP] Check Pods Manifest.lock */,
+				FA08D9C91E04828000A22BA0 /* Sources */,
+				FA08D9CA1E04828000A22BA0 /* Frameworks */,
+				FA08D9CB1E04828000A22BA0 /* Resources */,
+				09C514AF5C62C591F1401B97 /* [CP] Embed Pods Frameworks */,
+				B976AAA19C2AEC6E12FF6658 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA08D9CF1E04828000A22BA0 /* PBXTargetDependency */,
+			);
+			name = GoEuroTests;
+			productName = GoEuroTests;
+			productReference = FA08D9CD1E04828000A22BA0 /* GoEuroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA08D9A91E04827F00A22BA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Łukasz Śliwiński";
+				TargetAttributes = {
+					FA08D9B01E04827F00A22BA0 = {
+						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					FA08D9CC1E04828000A22BA0 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA08D9B01E04827F00A22BA0;
+					};
+				};
+			};
+			buildConfigurationList = FA08D9AC1E04827F00A22BA0 /* Build configuration list for PBXProject "GoEuro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA08D9A81E04827F00A22BA0;
+			productRefGroup = FA08D9B21E04828000A22BA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA08D9B01E04827F00A22BA0 /* GoEuro */,
+				FA08D9CC1E04828000A22BA0 /* GoEuroTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA08D9AF1E04827F00A22BA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF07D521E0747A300698F2D /* Transport.storyboard in Resources */,
+				FA08D9DD1E04850200A22BA0 /* MainStoryboard.storyboard in Resources */,
+				FA0B74141E16858D0024F10B /* TransportsTabBar.xib in Resources */,
+				FA08D9C71E04828000A22BA0 /* LaunchScreen.storyboard in Resources */,
+				FA08D9C41E04828000A22BA0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA08D9CB1E04828000A22BA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4F19781E19B62C00E7ADF5 /* testBusData.json in Resources */,
+				C8DEDA361E1BA1F1005E417F /* testEmptyData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06D17A5EF70300DC65EA5D03 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuro/Pods-GoEuro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09C514AF5C62C591F1401B97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuroTests/Pods-GoEuroTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F16167AB042824D2B6B8FBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuro/Pods-GoEuro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96B4BE6742A4290000767AEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B976AAA19C2AEC6E12FF6658 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuroTests/Pods-GoEuroTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C779BC099C9A5678F96F47DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA08D9AD1E04827F00A22BA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD0AADD1E07331E002412FD /* Bus+CoreDataProperties.m in Sources */,
+				FAF07D551E0747BB00698F2D /* TransportViewController.m in Sources */,
+				FA08D9C21E04828000A22BA0 /* GoEuro.xcdatamodeld in Sources */,
+				FAF07D491E073E1000698F2D /* Transport+CoreDataProperties.m in Sources */,
+				FA17937C1E059EA800ED9A1D /* AppearanceManager.m in Sources */,
+				FA08D9EE1E04A11C00A22BA0 /* AppMainRouter.m in Sources */,
+				FA2FE1191E171C5700693A30 /* TransportTabBarControllerAnimator.m in Sources */,
+				FA08D9EB1E049FD800A22BA0 /* UIViewController+StoryboardLoad.m in Sources */,
+				FAEC79071E0B1FC600329F50 /* CoreDataScheduler.m in Sources */,
+				FAF07D5C1E0749F000698F2D /* TransportViewModel.m in Sources */,
+				FAA37D091E1326E6008045DD /* LoadingBar.swift in Sources */,
+				FA1793901E06C09900ED9A1D /* SettingsManager.m in Sources */,
+				FAD0AAD81E07331E002412FD /* Train+CoreDataClass.m in Sources */,
+				FA5733D41E09D5FA003C70E4 /* BaseDAO.m in Sources */,
+				FAD0AADB1E07331E002412FD /* Flight+CoreDataProperties.m in Sources */,
+				FA5733CA1E09BD3F003C70E4 /* TransportDAO.m in Sources */,
+				FA2FE11F1E191EE900693A30 /* MainRouter.m in Sources */,
+				FA08D9B91E04828000A22BA0 /* AppDelegate.m in Sources */,
+				FAF07D481E073E1000698F2D /* Transport+CoreDataClass.m in Sources */,
+				FA17937F1E05B36700ED9A1D /* UIImage+Color.m in Sources */,
+				FA1793861E0693E700ED9A1D /* NSManagedObjectContext+Helpers.m in Sources */,
+				FA4F19731E19848B00E7ADF5 /* TransportRouter.swift in Sources */,
+				FA08D9B61E04828000A22BA0 /* main.m in Sources */,
+				FA2FE1221E19795500693A30 /* UITableView+CellAnimation.m in Sources */,
+				FA17938D1E06BAC400ED9A1D /* GoEuroApi.m in Sources */,
+				FA5733D11E09D533003C70E4 /* ProviderLogoDAO.m in Sources */,
+				FA1793A11E070A3100ED9A1D /* NSEntityDescription+EntityManagement.m in Sources */,
+				FAD0AADA1E07331E002412FD /* Flight+CoreDataClass.m in Sources */,
+				FAD0AADC1E07331E002412FD /* Bus+CoreDataClass.m in Sources */,
+				FA08D9E01E0499DF00A22BA0 /* MainViewController.m in Sources */,
+				FAD0AAD91E07331E002412FD /* Train+CoreDataProperties.m in Sources */,
+				FA1793831E05F8EF00ED9A1D /* CoreDataManager.m in Sources */,
+				FA0B74191E16869F0024F10B /* TransportsTabBar.m in Sources */,
+				FA42B7291E15C99A00B19BCD /* TransportTableCellViewModel.m in Sources */,
+				FAF07D591E07493300698F2D /* TransportTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA08D9C91E04828000A22BA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8DEDA311E1B8D47005E417F /* GoEuroTransportViewModelTests.m in Sources */,
+				C8DEDA341E1B8DF5005E417F /* MockNetworking.m in Sources */,
+				FA4F19761E19B5BC00E7ADF5 /* GoEuroTestHelpers.m in Sources */,
+				FA08D9D21E04828000A22BA0 /* GoEuroTransportDaoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA08D9CF1E04828000A22BA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA08D9B01E04827F00A22BA0 /* GoEuro */;
+			targetProxy = FA08D9CE1E04828000A22BA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA08D9C51E04828000A22BA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA08D9C61E04828000A22BA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA08D9D41E04828000A22BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA08D9D51E04828000A22BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA08D9D71E04828000A22BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36ADDB4F36F291963E4FEA45 /* Pods-GoEuro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "GoEuro/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.plum.GoEuro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoEuro/Supporting Files/GoEuro-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA08D9D81E04828000A22BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABC29F2C6A5295C64BCFDD94 /* Pods-GoEuro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "GoEuro/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.plum.GoEuro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoEuro/Supporting Files/GoEuro-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FA08D9DA1E04828000A22BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24D4BA8A6959C89776A9BA7B /* Pods-GoEuroTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"$(TARGET_TEMP_DIR)/../$(PROJECT_NAME).build/DerivedSources",
+				);
+				INFOPLIST_FILE = GoEuroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.plum.GoEuroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoEuro.app/GoEuro";
+			};
+			name = Debug;
+		};
+		FA08D9DB1E04828000A22BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F13D981240956DB9772B038 /* Pods-GoEuroTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"$(TARGET_TEMP_DIR)/../$(PROJECT_NAME).build/DerivedSources",
+				);
+				INFOPLIST_FILE = GoEuroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.plum.GoEuroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoEuro.app/GoEuro";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA08D9AC1E04827F00A22BA0 /* Build configuration list for PBXProject "GoEuro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA08D9D41E04828000A22BA0 /* Debug */,
+				FA08D9D51E04828000A22BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA08D9D61E04828000A22BA0 /* Build configuration list for PBXNativeTarget "GoEuro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA08D9D71E04828000A22BA0 /* Debug */,
+				FA08D9D81E04828000A22BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA08D9D91E04828000A22BA0 /* Build configuration list for PBXNativeTarget "GoEuroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA08D9DA1E04828000A22BA0 /* Debug */,
+				FA08D9DB1E04828000A22BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA08D9C01E04828000A22BA0 /* GoEuro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA08D9C11E04828000A22BA0 /* GoEuro.xcdatamodel */,
+			);
+			currentVersion = FA08D9C11E04828000A22BA0 /* GoEuro.xcdatamodel */;
+			path = GoEuro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA08D9A91E04827F00A22BA0 /* Project object */;
+}

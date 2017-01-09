@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Bus" representedClassName="Bus" parentEntity="Transport" syncable="YES"/>
+    <entity name="Flight" representedClassName="Flight" parentEntity="Transport" syncable="YES"/>
+    <entity name="Train" representedClassName="Train" parentEntity="Transport" syncable="YES"/>
+    <entity name="Transport" representedClassName="Transport" isAbstract="YES" syncable="YES">
+        <attribute name="arrivalTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="departureTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="idKey" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberOfStops" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="priceInEuros" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="providerLogo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Bus" positionX="-54" positionY="36" width="128" height="45"/>
+        <element name="Flight" positionX="-63" positionY="27" width="128" height="45"/>
+        <element name="Train" positionX="-36" positionY="45" width="128" height="45"/>
+        <element name="Transport" positionX="-63" positionY="-18" width="128" height="150"/>
+    </elements>
+</model>
