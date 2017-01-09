@@ -19,3 +19,7 @@ Code base written using MVVM architecture with Router (Wireframe) part, known fr
 Couple of test written as an example.
 
 Keep in mind that not of all pices written with real product quality due to the time limitation (eg. error handling, tests, not full code documentation etc.)
+
+### Instruction
+All cocoapods dependecies included.
+Open `GoEuro.xcworkspace` file using Xcode >= 8.2.1.
