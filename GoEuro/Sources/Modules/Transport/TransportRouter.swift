@@ -14,15 +14,18 @@ import UIKit
 
 class TransportRouter: NSObject, TransportRouting {
 
-    // mark: - Properties
+    // MARK: - Properties
+
     fileprivate let controller: TransportViewController
 
-    // mark: - Initialization
+    // MARK: - Initialization
+
     init(controller: TransportViewController) {
         self.controller = controller
     }
 
-    // mark: - Methods
+    // MARK: - Methods
+
     func presentTransportDetailsFor(transportCellViewModel: TransportTableCellViewModel) {
         var title = ""
         if let priceIntegerPart = transportCellViewModel.priceIntegerPart,
