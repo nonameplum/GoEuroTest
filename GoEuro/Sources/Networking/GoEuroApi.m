@@ -25,7 +25,6 @@ NSString *_Nonnull const GoEuroApiAFNetworkingReactiveCocoaErrorInfoKey = @"GoEu
 #pragma mark - Initialization
 - (nonnull instancetype)init {
     self = [self initWithBaseURL:[SettingsManager baseApiURL]];
-    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     return self;
 }
 
@@ -35,6 +34,7 @@ NSString *_Nonnull const GoEuroApiAFNetworkingReactiveCocoaErrorInfoKey = @"GoEu
         _configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         _manager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseURL sessionConfiguration:_configuration];
         _manager.requestSerializer.timeoutInterval = 10;
+        [_manager.reachabilityManager startMonitoring];
     }
 
     return self;
@@ -89,7 +89,11 @@ NSString *_Nonnull const GoEuroApiAFNetworkingReactiveCocoaErrorInfoKey = @"GoEu
 }
 
 - (BOOL)isNetworkReachable {
-    return [AFNetworkReachabilityManager sharedManager].reachable;
+    if (self.manager.reachabilityManager.networkReachabilityStatus == AFNetworkReachabilityStatusUnknown) {
+        return YES;
+    }
+
+    return self.manager.reachabilityManager.isReachable;
 }
 
 #pragma mark - Class
